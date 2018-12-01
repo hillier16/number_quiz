@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+ <head>
+     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>number_quiz</title>
+ </head>
+ <body>
+ <h1>환영합니다.
+     숫자를 그리면 인공지능이 맞추는 사이트 입니다.
+ Welcome</h1>
+ 숫자 그리러 가기
+ <a href="{% url 'quiz:draw_number' %}">Go!</a>
+ <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
